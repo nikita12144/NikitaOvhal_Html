@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+ 
+body {
+background-image:url("r24.jpeg");
+background-repeat: no-repeat;
+background-attachment: fixed;  
+background-size: cover;
+}
+td{color:white;}
+.header{ width:1500px; float:left; padding:10px 0px; height:500px; background-attachment:fixed;}
+.header-left{ width:360px; float:left; padding:15px 20px;}
+
+.header-right{ width:800px; float:left; padding-top:60px;}
+.header-right ul{ list-style:none; padding:0px;}
+.header-right ul li{ padding:5px 15px; cursor:pointer; margin:0px 10px; float:left; border:1px solid #FFF; border-radius:2px;}
+.header-right ul li:hover{border:1px solid #7db549; background:#7db549;}
+.header-right ul li a{ font-size:14px; color:#FFF; text-decoration:none;}
+.header-right ul li a:hover{ color:#FFF;}
+.white{ color:#FFF; text-decoration:none;}
+.white a{ color:#FFF; text-decoration:none;}
+.white a:hover{ color:#CCC;}
+
+
+.header-bottom{ width:1200px; float:left; padding:75px 0px 20px;}
+.header-font{ color:#FFF; text-align:center; font-size:48px; text-transform:uppercase; font-weight:bold; padding:0px;}
+.header-btns{ color:#FFF; font-size:16px; font-weight:500; border:1px solid #FFF; 
+padding:10px 30px; text-decoration:none; border-radius:2px;}
+.header-btns:hover{ background:#7db549; color:#FFF; border:1px solid #7db549;}
+.content-part-2{ width:1500px; float:left; padding:10px 0px;no-repeat; height:550px; background-position:center  bottom; background-attachment:fixed;}
+
+.footer-bottom{ width:1500px; float:left; padding:15px; text-align:center; color:#FFF; font-size:13px; background:#000;}
+.white{ color:#FFF; text-decoration:none;}
+.white a{ color:#FFF; text-decoration:none;}
+.white a:hover{ color:#CCC;}
+
+</style> 
+    <title>Kitchen Cafe and Resto</title>
+</head>
+
+<body>
+<div class="header">
+<p  style="opacity: 0.8;
+       float:left;
+	   color: cyan; 
+       width: 5%; 	   
+       padding: 10px;  
+       margin: 5px 0 20px 0;  
+       font-size:15px;
+       text-align: center;
+	   font-family:cursive" id="clock"></p>
+       
+<script>
+function currentTime() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
+
+  if(hh == 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + ":" + ss + " " + session;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+}
+currentTime();
+</script>
+<div class="header-left"><img src="logo.jpg" width="300" height="150" alt="Logo"></div>
+
+
+
+<div class="header-right">
+    	<ul>
+        	<li><a href="Main.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Menu.html">Menu Card</a></li>
+            <li><a href="bookatable.html">Reservation</a></li>
+            <li><a href="#!">Review</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="header-bottom">
+    	<div class="header-font">Book A Table
+		</div>
+        </div>
+   </div>
+</div>   	
+<div class="content-part-2">
+<div style="float:center;width:50%;border:1px solid cyan;border-radius:15px;padding:20px;">
+
+<h3 style="color:black;text-align:center;background-color:skyblue;padding:5px;">We would be glad to reserve a table for you at our restaurant!</h3>
+
+<form action="enquiryformprocess.jsp" name="myform" onsubmit="return validateform()">
+
+<table>
+
+<tbody><tr><td>Name:</td><td><input type="text" name="name" placeholder="enter name..."style="width:100%;  
+padding: 10px;margin: 5px 0 22px 0;display: inline-block;background:#f1f1f1;">
+</td></tr>
+<tr><td>Mobile:</td><td><input type="text" name="mobile"  placeholder="enter mobile no..." style="width:100%;  
+padding: 10px;margin: 5px 0 22px 0;display: inline-block;background:#f1f1f1;">
+</td></tr>
+<tr><td>Email:</td><td><input type="email" name="email"  placeholder="enter email..." style="width:100%;  
+padding: 10px;margin: 5px 0 22px 0;display: inline-block;background:#f1f1f1;">
+</td></tr>
+<tr><td>Date:</td><td><input type="date" name="date"  placeholder="enter date..." style="width:100%;  
+padding: 10px;margin: 5px 0 22px 0;display: inline-block;background:#f1f1f1;">
+</td></tr>
+<tr><td>Time</td><td><input type="time" name="time"  placeholder="enter time..." style="width:100%;  
+padding: 10px;margin: 5px 0 22px 0;display: inline-block;background:#f1f1f1;">
+</td></tr>
+<tr><td>Message:</td><td><textarea name="message"  style="height:100px;width=200%;padding: 10px;margin: 5px 0 22px 0;display:inline-block;background:#f1f1f1;" placeholder="enter your message...">
+</textarea></td></tr>
+<tr><td colspan="2"><input type="submit" class="subbutton" value="submit" style="width:323px;padding: 10px;margin: 5px 0 22px 0;display: inline-block;text-align:center;background-color:Blue;  
+  color:white;"></td></tr>
+<tr><td colspan="2">After submitting form, we will contact you shortly!</td></tr>
+</tbody></table>
+</form>
+</div>
+</div>
+</div>
+</body>
+</html>

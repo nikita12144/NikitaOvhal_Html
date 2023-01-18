@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<link rel
+<style> 
+ 
+
+</style> 
+    <title>Kitchen Cafe and Resto</title>
+</head>
+
+<body>
+<div class="header">
+<p  style="opacity: 0.8;
+       float:left;
+	   color: cyan; 
+       width: 5%; 	   
+       padding: 5px;  
+       margin: 5px 0 20px 0;  
+       font-size:15px;
+       text-align: center;
+	   font-family:cursive" id="clock"></p>
+       
+<script>
+function currentTime() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
+
+  if(hh == 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + ":" + ss + " " + session;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+}
+currentTime();
+</script>
+<div class="header-left"><img src="logo.jpg" width="300" height="150" alt="Logo"></div>
+
+
+
+<div class="header-right">
+    	<ul>
+        	<li><a href="Main.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Menu.html">Menu Card</a></li>
+            <li><a href="bookatable.html">Reservation</a></li>
+            <li><a href="#!">Review</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="header-bottom">
+    	<div class="header-font">Our Menu</div>
+        </div>
+   </div>
+</div>   
+
+<div class="content-part-3">
+	<div class="content-part-3-left"><img src="r8.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Chicken Biryani</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>350.00/-</i></div>
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+    <div class="content-part-3-left"><img src="r9.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Chicken Handi</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>450.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+            
+    <div class="content-part-3-left"><img src="r10.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Egg Curry</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>265.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+    <div class="content-part-3-left"><img src="r21.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Choclate Cofee</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>160.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+            
+    <div class="content-part-3-left"><img src="r12.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Pizza</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>250.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+    <div class="content-part-3-left"><img src="r13.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Sandwich</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>150.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+            
+    <div class="content-part-3-left"><img src="r11.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Burger</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>199.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+    <div class="content-part-3-left"><img src="r14.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Sweet Potato Fries</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>90.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+            
+    <div class="content-part-3-left"><img src="r15.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Momos</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>455.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+    <div class="content-part-3-left"><img src="r16.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">South Indian Thali</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>430.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+            
+    <div class="content-part-3-left"><img src="r17.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Tandoori Fish</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>550.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+    <div class="content-part-3-left"><img src="r18.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Chilli Cheese Nachos</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>650.00/-</i></div>
+        
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+            
+    <div class="content-part-3-left"><img src="r19.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Grilled Chicken Kabab</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>499.00/-</i></div>
+       
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+    <div class="content-part-3-left"><img src="r20.jpeg" width="230" height="155"></div>
+    <div class="content-part-3-right">
+        <div class="content-part-3-right-h4">Veg Thali</div>
+        <div class="price">Price : <i class="green"><span class="fa fa-inr"></span>700.00/-</i></div>
+      
+        <div class="margin_p3"><a href="orderfood.html" class="order-now">Order Now</a></div>
+    </div>
+</div>
+<!----- End Content ------>
+
+<!------ Start Footer ------>
+<div class="footer">
+	<div class="footer-parts">
+    	<div class="footer-parts-h3">About Restaurant</div>
+        <div class="footer-parts-p">
+        Kitchen Cafe & Resto are located across India, in metro regions including the NCR, Mumbai, Kolkata, Bengaluru, Hyderabad and Chennai, as well as numerous other tier I and II cities such as Pune, Ahmedabad, Chandigarh, Jaipur, Indore, Aurangabad, Udaipur, Vishakhapatnam, Kochi, Ludhiana, Thiruvananthapuram and Vijayawada. The company expanded internationally with hotels opening in Dubai in December 2019 and in Bhutan in February 2020. New hotels are also set to open internationally in Bhutan and Nepal.</div>
+    </div>
+    <div class="footer-parts">
+    	<div class="footer-parts-h3">Opening Hours</div>
+        <div class="footer-parts-p">
+        	Mon - Thu : 7:00 AM - 10:00 PM <br />
+            Friday : 7:00 AM - 11:00 PM <br />
+            Sat - Sun : 7:00 AM - 11:45 PM 
+        </div>
+    </div>
+    <div class="footer-parts">
+    	<div class="footer-parts-h3">Our Location</div>
+        <div class="footer-parts-p">
+        	MG Road,<br />
+            Opp - Aurora Tower,<br />
+            Pune, Maharashtra,<br /> 
+            India - 411017
+        </div>
+        <div class="footer-icons">
+        	<ul>
+            	<li><a href="#!"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#!"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#!"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#!"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+	<div class="white">&copy; <script language="javascript" type="text/javascript">document.write(new Date().getFullYear());</script>.Kitchen Cafe & Resto <a href="#" target="_blank">Ltd</a>.</div>
+</div>
+<!------ End Footer ------->
+
+<div class="clearfix"></div>
+</div>
+
+</body>
+</html>	

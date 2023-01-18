@@ -1,0 +1,167 @@
+<html>
+<head>
+<title>Kitchen Cafe and Resto</title>
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css" />
+<style>
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
+</head>
+<body>
+
+<div class="main">
+
+<!----- Start Header ------>
+<div class="header">
+<p  style="opacity: 0.8;
+       float:left;
+	   color: cyan; 
+       width: 5%; 	   
+       padding: 10px;  
+       margin: 5px 0 20px 0;  
+       font-size:15px;
+       text-align: center;
+	   font-family:cursive" id="clock"></p>
+       
+<script>
+function currentTime() {
+  let date = new Date(); 
+  let hh = date.getHours();
+  let mm = date.getMinutes();
+  let ss = date.getSeconds();
+  let session = "AM";
+
+  if(hh == 0){
+      hh = 12;
+  }
+  if(hh > 12){
+      hh = hh - 12;
+      session = "PM";
+   }
+
+   hh = (hh < 10) ? "0" + hh : hh;
+   mm = (mm < 10) ? "0" + mm : mm;
+   ss = (ss < 10) ? "0" + ss : ss;
+    
+   let time = hh + ":" + mm + ":" + ss + " " + session;
+
+  document.getElementById("clock").innerText = time; 
+  let t = setTimeout(function(){ currentTime() }, 1000);
+}
+currentTime();
+</script>
+
+	<div class="header-left"><img src="logo.jpg" width="300" height="150" alt="Logo"></div>
+    <div class="header-right">
+    	<ul>
+        	<li><a href="Main.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Menu.html">Menu Card</a></li>
+            <li><a href="bookatable.html">Reservation</a></li>
+            <li><a href="#!">Review</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+        </ul>
+    </div>
+    
+    <div class="header-bottom">
+    	<div class="header-font">About Us</div>
+		<div class="p50_0" align="center">
+        <a href="bookatable.html" class="header-btns">BOOK A TABLE</a>&nbsp; &nbsp; &nbsp; &nbsp;
+        <a href="Menu.html" class="header-btns">SEE THE MENU </a>
+        </div>
+        
+</div>
+<!----- End Header ------>
+
+<!----- Start Content ------>
+<div class="content-part-1">
+	<div class="content-part-1-left">
+    	<div class="content-part-1-left-h3"Kitchen Cafe & Resto></div>
+        <div class="content-part-1-left-p">
+		'Kitchen Cafe & Resto'
+       Notable, sleek and modern, Kitchen Cafe & Resto makes excitingly singular hotels for individual personalities. We charm our movement shrewd, present day visitors with a veritable, welcoming mood. We make fervor with our shocking, driving edge structure. Also, we endeavor to connect every single visitor through our imaginative and extremely important scope of all encompassing offices and administrations, including quick Free Internet. We’ve bundled everything flawlessly together, with our one of a kind Yes I Can! Benefit ethos and our 100% Satisfaction Guarantee.
+	   It’s an ideal condition that indicates a profoundly individual – and life-changing – 360° cordiality encounter, unrivaled anyplace on the planet today.
+
+Far beyond only a trademark, Yes We can! is the brand ethos: a unique administration theory that separates us from the challenge. Being really certifiable hosts is tied in with giving visitors our full focus consistently. At ‘Kichen Cafe & Resto’ , the hotel chief, the server, the assistant, the watchman, and each other individual colleague assume an indispensable job in conveying a noteworthy visitor encounter.
+
+Yes, We can! is basically our organization’s lifestyle. Empowering and engaging, it guides us to address any difficulty and recognize each chance. From Glasgow or Cape Town, Beijing or Rome, our visitors are 100% guaranteed reliably superb administration.
+
+
+ </div>
+    </div>
+    <div class="content-part-1-right" align="center">
+    	<img src="r25.jpeg" width="700" height="434" alt="Restaurant">
+    </div>
+</div>
+
+
+<div class="footer">
+	<div class="footer-parts">
+    	<div class="footer-parts-h3">About Restaurant</div>
+        <div class="footer-parts-p">
+        Kitchen Cafe & Resto are located across India, in metro regions including the NCR, Mumbai, Kolkata, Bengaluru, Hyderabad and Chennai, as well as numerous other tier I and II cities such as Pune, Ahmedabad, Chandigarh, Jaipur, Indore, Aurangabad, Udaipur, Vishakhapatnam, Kochi, Ludhiana, Thiruvananthapuram and Vijayawada. The company expanded internationally with hotels opening in Dubai in December 2019 and in Bhutan in February 2020. New hotels are also set to open internationally in Bhutan and Nepal.</div>
+    </div>
+    <div class="footer-parts">
+    	<div class="footer-parts-h3">Opening Hours</div>
+        <div class="footer-parts-p">
+        	Mon - Thu : 7:00 AM - 10:00 PM <br />
+            Friday : 7:00 AM - 11:00 PM <br />
+            Sat - Sun : 7:00 AM - 11:45 PM 
+        </div>
+    </div>
+    <div class="footer-parts">
+    	<div class="footer-parts-h3">Our Location</div>
+        <div class="footer-parts-p">
+        	MG Road,<br />
+            Opp - Aurora Tower,<br />
+            Pune, Maharashtra,<br /> 
+            India - 411017
+        </div>
+        <div class="footer-icons">
+        	<ul>
+            	<li><a href="#!"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#!"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#!"><i class="fa fa-linkedin"></i></a></li>
+                <li><a href="#!"><i class="fa fa-google-plus"></i></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="footer-bottom">
+	<div class="white">&copy; <script language="javascript" type="text/javascript">document.write(new Date().getFullYear());</script>.Kitchen Cafe & Resto <a href="#" target="_blank">Ltd</a>.</div>
+</div>
+<!------ End Footer ------->
+
+<div class="clearfix"></div>
+</div>
+
+</body>
+</html>
