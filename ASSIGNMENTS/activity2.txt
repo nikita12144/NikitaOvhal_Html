@@ -1,0 +1,27 @@
+1. write pseudocode for finding biggest of two numbers
+
+declare variable a and b
+enter the value of a and b
+check the condition 
+if a >b
+display a is largest
+elses
+display b is largest
+stop
+
+2. average of three numbers
+
+declare 3 variables n1 , n2, n3 and sum as int and avg as float
+initialize the value as 0 
+enter the value of three varibles n1,n2,n3
+add three numbers(n1+n2+n3) and store in variable sum 
+and print sum
+divide the sum of the three numbers by 3 and store in vairable avg and print avg
+
+3. adding two numbers
+
+enter the first integer
+enter a second integer
+Compute the sum of the two user inputs
+Display an output that explains the answer as the sum
+Display the result

@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>generating output in javascript</title>
+</head>
+<body>
+ <h3> InnerHtml</h3>
+ <p id="demo"></p>
+ <script>
+ // this is my window.alert 
+ 
+ window.alert("Hi! \nWelocome to Javascript");
+ 
+ // this is console.log
+ 
+ var a=50;
+ var b=20;
+ var sum=a+b;
+ console.log('sum is');
+ console.log(sum);
+ 
+ // this is innerHTML
+ 
+ document.getElementById("demo").innerHTML = 10+20;
+ 
+ // this is document.write
+ 
+ document.write("<h3>document.write</h3>");
+ document.write("sum of 5+6 is");
+ </script>
+ <br><br>
+<button type="button" onclick="document.write(5+6)">answer</button>
+<br><br><br>
+<button onclick="window.print()">Print this page</button>
+ </body>
+ </html>
+ 
+     

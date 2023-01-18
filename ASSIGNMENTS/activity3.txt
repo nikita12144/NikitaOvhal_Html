@@ -1,0 +1,22 @@
+write an algorithm to find average of two numbers 
+
+algorithm using natural language :
+       1. Start
+       2. initialize sum = 0 and avg = 0
+       3. Read first number from user add it to sum
+       4. Read second number from user add it to sum
+       5. compute avg=sum/2
+       4. print avg
+       5. stop
+
+
+using pseudocode:
+ sum=0,avg=0;
+ a=3, b=5;
+ sum = a+b;
+ return sum
+ avg = sum/2;
+ return avg
+
+
+

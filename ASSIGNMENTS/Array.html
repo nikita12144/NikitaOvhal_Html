@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>Array</title>
+</head>
+<body>
+    <script>
+	var fruits = ["apple","banana","mango","orange","papaya"];
+	document.write(fruits[0] +"<br>");
+	document.write(fruits[1] +"<br>");
+    document.write(fruits[2] + "<br>");
+	document.write(fruits[fruits.length-1] + "<br>"+"<br>");
+	
+	// for condition
+	 
+	for(var i=0;i<fruits.length;i++)
+	{
+	document.write(fruits[i] +"<br>");
+	}
+	document.write("<br>");
+	
+	//for of condition
+	
+	for(var fruit of fruits)
+	document.write(fruit +"<br>");
+	document.write(fruits.length);
+	document.write("<br>" + "<br>");
+	
+	// for in condition3
+	
+	for (var x in fruits)
+	{
+	text +=  fruits[x] + "<br>";
+	}
+	document.write(text);
+	
+	// push operation
+    document.write("<h3>push operation</h3>");
+	document.write("<h4>add element to last place</h4>");
+
+	fruits.push("pineapple" + "<br>"); // adding element to last place
+    document.write(fruits);    // display array elements
+	document.write("<br>");
+			
+	document.write("<h4>add element to first place</h4>");
+
+	fruits.unshift("watermillon"); 	// add element to first place
+    document.write(fruits +"<br>");
+    document.write(fruits.length + "<br>"); // display length of array
+	
+	// pop operation
+		
+	document.write("<h3>pop operation</h3>");
+	document.write("<h4>remove last element</h4>");
+
+    var last = fruits.pop(); // remove last element
+	document.write(last + "<br>");
+	document.write(fruits.length + "<br>");
+	document.write(fruits);
+    document.write("<br>");
+
+	document.write("<h4>remove first element</h4>");
+
+    var first = fruits.shift();  // remove last element
+	document.write(first + "<br>");
+	document.write(fruits.length + "<br>");
+	document.write(fruits);
+
+ // array splice 
+ 
+	document.write("<h3>Array splice</h3>");
+	document.write(fruits + "<br>" + "<br>");
+	fruits.splice(2,0,"pineapple","watermillon");
+		document.write(fruits + "<br>" +"<br>");
+		
+		fruits.splice(0,1);
+		document.write(fruits + "<br>");
+     </script>
+   </body>
+</html>
+	
+
+	

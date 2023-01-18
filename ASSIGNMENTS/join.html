@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>join</title>
+</head>
+<body>
+     
+	<script>
+document.write("<h4>join()</h4>");
+	     var fruits = ["apple","banana","mango","orange","papaya","apple","pineapple"];
+		 var colors = ["red","yellow","green","blue","black"];
+		 var flowers = ["rose","lili","lotus","jasmine"];
+		 document.write(fruits.join() + "<br>");
+		 document.write(fruits.join("") + "<br>");
+		 document.write(fruits.join("-") + "<br>");
+		 document.write(fruits.join(", ") + "<br>");
+		 	
+document.write("<h4>slice()</h4>");
+         document.write(fruits.slice(3) + "<br>");
+         document.write(fruits.slice(-1) + "<br>");
+         document.write(fruits.slice(2,-1) + "<br>");
+         document.write(fruits.slice(1,5)+ "<br>");
+       
+	      var subarr = fruits.slice(1,3);
+          document.write(subarr + "<br>");
+		  
+document.write("<h4>concat()</h4>");
+         var arr = fruits.concat(colors);
+		 document.write(arr + "<br>");
+          var arr1 = fruits.concat(colors,flowers);
+		  document.write(arr1);
+		  
+document.write("<h4>indexOf</h4>");
+         document.write(fruits+ "<br>");
+         document.write(fruits.indexOf("apple") + "<br>");
+		 document.write(fruits.indexOf("apple",3) + "<br>");
+		 document.write(fruits.lastIndexOf("apple",2));
+          
+      </script>
+  </body>
+</html>
+		 

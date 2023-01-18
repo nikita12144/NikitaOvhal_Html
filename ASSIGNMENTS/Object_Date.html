@@ -1,0 +1,64 @@
+<html>
+<head>
+    <title>Object and date</title>
+</head>
+	<body>
+	    <script>
+		// creating object 
+		  document.write("<h4>Creating Object</h4>");
+
+		    var emp = {name:"Nikita",city:"Pune",contact:9654446515,age:24};
+			// accessing object
+			document.write(emp.name + " is " + emp.age + " years old and located in " + emp.city + ".");
+            document.write("<br>");
+            
+            var stud = new Object(); // create object using new object()
+             stud.fname = "Diksha";
+             stud.lname = "Mahajan";
+             stud.rollno = 20;
+             stud.percentage = "80%";
+             document.write(stud.fname + " " + stud.lname + "  " + stud.rollno + "  " + stud.percentage);			 
+
+// Booleans
+  document.write("<h4>Boolean Object</h4>");
+  document.write(Boolean(10>9) + "<br>");
+  document.write(Boolean(10>=10) + "<br>");
+  document.write((1>9) + "<br>");
+  document.write(" 100 is " + " " + Boolean(100) + "<br>");
+  document.write(Boolean(0/2) + "<br>");
+  document.write(Boolean("") + "<br>");
+  document.write(Boolean(0) + "<br>");
+   var x;
+   document.write(Boolean(x) + "<br>");
+   var x = false;  // x is boolean
+   var y = new Boolean(false); // y is object
+   document.write(Boolean(x==y));
+     
+	 document.write("<h4>Date Object</h4>");
+	 var d = new Date();
+	 document.write(d);
+	 document.write("<br>");
+	 var a = new Date(2022, 08, 22, 03, 00, 00, 0);
+	 document.write((a) + "<br>");
+	 var b = new Date(1997, 08, 12);
+	 document.write((b)+ "<br>");
+document.write("<h4>toString()</h4>");
+    document.write(d.toString());
+document.write("<h4>toUTCString()</h4>");
+    document.write(d.toUTCString());
+document.write("<h4>toDateString()</h4>");
+    document.write(d.toDateString());
+document.write("<h4>toISOString()</h4>");
+    document.write(d.toISOString());
+
+document.write("<h4>get method</h4>");
+document.write(d.getTime()+ "<br>"); // return numner of milliseconds
+document.write(d.getFullYear() + "<br>");  // return full year of date
+document.write(d.getMonth() +1 + "<br>");   // return current month
+document.write(d.getDate()+ "<br>");     // return date 
+document.write(d.getDay());              //return weekday as  number
+
+
+	     </script>
+	</body>
+</html>

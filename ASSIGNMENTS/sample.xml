@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<employee>
+<emp1 id="101">
+<name>
+<firstname>Nikita</firstname>
+<lastname>Ovhal</lastname>
+</name>
+<city>Pune</city>
+<designation>Software tester</designation>
+<age>24</age>
+<salary>30000</salary>
+</emp1>
+<emp2 id="102">
+<name>
+<firstname>Akshay</firstname>
+<lastname>Pande</lastname>
+</name>
+<city>Mumbai</city>
+<designation>developer</designation>
+<age>25</age>
+<salary>20000</salary>
+</emp2>
+<emp3 id="103">
+<name>
+<firstname>Diksha</firstname>
+<lastname>Mahajan</lastname>
+</name>
+<city>bangalore</city>
+<designation>Java Developer</designation>
+<age>23</age>
+<salary>25000</salary>
+</emp3>
+<message>salary &gt; 20000</message>
+</employee>
+
+
